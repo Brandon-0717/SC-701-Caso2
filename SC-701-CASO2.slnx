@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="C2.Abstractions/C2.Abstractions.csproj" Id="7915093d-02b9-4dd0-b6c6-6a6d95e8a3ec" />
+  <Project Path="C2.BusinessLogic/C2.BusinessLogic.csproj" Id="6eb51b15-5a04-4e53-9d21-f326796c99c4" />
+  <Project Path="C2.DataAccess/C2.DataAccess.csproj" Id="38f34013-b1b3-4fdb-a06a-2b574fa2ab70" />
+  <Project Path="C2.Inventarios/C2.Inventarios.csproj" Id="59f644d9-d32e-4087-9054-31f153d5c88c" />
+  <Project Path="C2.InventariosAPI/C2.InventariosAPI.csproj" Id="0f46286e-0ea6-41e3-8d64-f5ad45faceea" />
+  <Project Path="C2.OrdersAPI/C2.OrdersAPI.csproj" Id="62abae01-03b1-43f0-b1f4-91fd39c13914" />
+</Solution>
