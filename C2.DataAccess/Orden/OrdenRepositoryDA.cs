@@ -13,9 +13,9 @@ namespace C2.DataAccess.Orden
             _context = context;
         }
 
-        public async Task<List<OrdenDetalleDA>> Listar()
+        public async Task<List<OrdenDA>> Listar()
         {
-            return await _context.OrdenDetalles.ToListAsync();
+            return await _context.Ordenes.ToListAsync();
         }
     }
 }

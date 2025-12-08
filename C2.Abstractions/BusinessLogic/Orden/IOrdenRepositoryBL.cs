@@ -6,6 +6,6 @@ namespace C2.Abstractions.BusinessLogic.Orden
 {
     public interface IOrdenRepositoryBL
     {
-        Task<CustomResponse<List<OrdenDetalleDTO>>> Listar();
+        Task<CustomResponse<List<OrdenDTO>>> Listar();
     }
 }

@@ -18,9 +18,9 @@ namespace C2.BusinessLogic.Orden
             _mapper = mapper;
         }
 
-        public async Task<CustomResponse<List<OrdenDetalleDTO>>> Listar()
+        public async Task<CustomResponse<List<OrdenDTO>>> Listar()
         {
-            var response = new CustomResponse<List<OrdenDetalleDTO>>();
+            var response = new CustomResponse<List<OrdenDTO>>();
 
             var ordenes = await _ordenRepositoryDA.Listar();
 
@@ -31,7 +31,7 @@ namespace C2.BusinessLogic.Orden
                 return response;
             }
 
-            response.Data = _mapper.Map<List<OrdenDetalleDTO>>(ordenes);
+            response.Data = _mapper.Map<List<OrdenDTO>>(ordenes);
             response.Message = "Ordenes obtenidas correctamente.";
             return response;
         }
