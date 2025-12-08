@@ -11,6 +11,8 @@ namespace C2.BusinessLogic.Mapper
         {
             CreateMap<ProductoDA, ProductoDTO>();
             CreateMap<ProductoDTO, ProductoDA>();
+            CreateMap<OrdenDA, OrdenDTO>();
+            CreateMap<OrdenDTO, OrdenDA>();
         }
     }
 }

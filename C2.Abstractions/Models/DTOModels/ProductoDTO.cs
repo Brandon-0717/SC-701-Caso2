@@ -23,12 +23,12 @@ namespace C2.Abstractions.Models.DTOModels
         public string Descripcion { get; set; }
 
         [Required(ErrorMessage = "La cantidad del producto es requerida")]
-        [MinLength(1, ErrorMessage = "La cantidad debe ser al menos 1.")]
+        [Range(1, int.MaxValue, ErrorMessage = "La cantidad debe ser al menos 1.")]
         [Display(Name = "Cantidad")]
         public int Cantidad { get; set; }
 
         [Required(ErrorMessage = "El precio del producto es requerido")]
-        [MinLength(1, ErrorMessage = "El precio no puede ser menor a 1.")]
+        [Range(1, double.MaxValue, ErrorMessage = "El precio no puede ser menor a 1.")]
         [Display(Name = "Precio")]
         public decimal Precio { get; set; }
 

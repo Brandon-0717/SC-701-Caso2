@@ -13,8 +13,10 @@ builder.Services.AddAutoMapper(cfg => { }, typeof(MapeoClases));
 
 //INYECCION DE DEPENDENCIAS
 #region Inyeccion de Dependencias
-builder.Services.AddTransient<IListarProductosDA, ListarProductosDA>();
-builder.Services.AddTransient<IListarProductosBL, ListarProductosBL>();
+builder.Services.AddTransient<IProductoRepositoryDA, ProductoRepositoryDA>();
+builder.Services.AddTransient<IProductoRepositoryBL, ProductoRepositoryBL>();
+builder.Services.AddTransient<IObtenerProductoPorCodigoDA, ObtenerProductoPorCodigoDA>();
+builder.Services.AddTransient<IObtenerProductoPorCodigoBL, ObtenerProductoPorCodigoBL>();
 #endregion
 
 
